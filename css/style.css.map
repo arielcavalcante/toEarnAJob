@@ -2,9 +2,9 @@
     "version": 3,
     "mappings": "ACCA,AAAA,IAAI,EAAE,IAAI,EAAE,GAAG,EAAE,UAAU,EAAE,GAAG,EAAE,KAAK,EAAE,CAAC,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,GAAG,EAAE,EAAE;AAC3E,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,IAAI,EAAE,CAAC,EAAE,QAAQ,EAAE,KAAK,EAAE,EAAE,EAAE,EAAE,CACpD;EACA,MAAM,EAAE,CAAC;EAAE,OAAO,EAAE,CAAC;EAAE,MAAM,EAAE,CAAC;EAAE,OAAO,EAAE,IAAI;CAC9C;;AACD,AAAA,EAAE,CACF;EACI,eAAe,EAAE,IAAI;CACxB;;AAED,AAAA,CAAC,EAAE,IAAI,CACP;EACI,eAAe,EAAE,IAAI;CACxB",
     "sources": [
-        "style.scss",
-        "_reset.scss",
-        "_variables.scss"
+        "../sass/style.scss",
+        "../sass/_reset.scss",
+        "../sass/_variables.scss"
     ],
     "names": [],
     "file": "style.css"

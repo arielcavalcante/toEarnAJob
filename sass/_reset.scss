@@ -4,3 +4,12 @@ ol, li, dl, dt, dd, form, a, fieldset, input, th, td
 {
 margin: 0; padding: 0; border: 0; outline: none;
 }
+ul
+{
+    list-style-type: none;
+}
+
+a, link
+{
+    text-decoration: none;
+}

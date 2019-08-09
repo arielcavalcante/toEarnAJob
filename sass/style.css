@@ -5,4 +5,12 @@ ol, li, dl, dt, dd, form, a, fieldset, input, th, td {
   border: 0;
   outline: none;
 }
+
+ul {
+  list-style-type: none;
+}
+
+a, link {
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
