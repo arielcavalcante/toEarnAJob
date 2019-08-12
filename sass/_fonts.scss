@@ -1,0 +1,232 @@
+//_fonts.scss
+body {
+  font-size: 18px;
+}
+
+.h1-desk {
+  font-family: SFProDisplay;
+  font-size: 48px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  color: $pale;
+}
+
+.h1 {
+  font-family: SFProDisplay;
+  font-size: 36px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: $pale;
+}
+
+.h2-desk {
+  font-family: SFProDisplay;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: $pale;
+}
+
+.h1-text {
+  font-family: SFProDisplay;
+  font-size: 24px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  color: $pale;
+}
+
+.h2 {
+  font-family: SFProDisplay;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: center;
+  color: $pale;
+}
+
+.btn-text {
+  font-family: SFProDisplay;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: center;
+  color: $black;
+}
+
+.fontawesome {
+  font-family: FontAwesome5Brands;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: center;
+  color: $black;
+}
+
+.table-title {
+  font-family: SFProDisplay;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: $pale;
+}
+
+.h4 {
+  font-family: SFProDisplay;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black;
+}
+
+.nav-menu {
+  font-family: SFProDisplay;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black;
+}
+
+.paragraph {
+  font-family: SFProDisplay;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: $pale;
+}
+
+.email {
+  font-family: SFProText;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black;
+}
+
+.olympus-mobile {
+  font-family: SFProText;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: $pale;
+}
+
+.table-text-alt {
+  font-family: SFProText;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: $black;
+}
+
+.table-text {
+  font-family: SFProText;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: $egg-shell;
+}
+
+.copyrights {
+  font-family: SFCompactText;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: $black;
+}
+
+.primary-text {
+  font-family: SFCompactText;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: $pale;
+}
+
+.card-text {
+  font-family: SFProText;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black;
+}
+
+.disclaimer {
+  font-family: SFProText;
+  font-size: 11px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-align: center;
+  color: $pale;
+}

@@ -28,17 +28,168 @@
 <body>
     <header>
         <nav>
-            <menu><button id="hamburger-menu">Menu</button></menu>
-            <div>
-                <ul>
-                    <li><a href="#" class="menu-item">Where to find Hermes</a></li>
-                    <li><a href="#" class="menu-item">Technologies</a></li>
-                    <li><a href="#" class="menu-item">Labels</a></li>
-                    <li><a href="#" class="menu-item">Contact Us</a></li>
-                </ul>
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <input type="checkbox" alt="menu" class="hamburger-menu"></input>
+                <div menu-content>
+                    <ul>
+                        <li><a href="#">Where to find Hermes</a></li>
+                        <li><a href="#">Technologies</a></li>
+                        <li><a href="#">Labels</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <form action="/"><input type="search" name="search" id="search"></form>
+        <form action="/"><input type="search" name="search" class="search">
+        <div><button type="submit"><a href="#"></a>search</button></div>
+        </form>
+        <figure>
+            <img class="hermes-arrives" src="./illustrations/hermes01.svg" alt="A woman and a man walk on the street. The man wave his hand towards a flying robot that is landing with a yellow and purple box.">
+        </figure>
     </header>
+    <main>
+        <h1 class="title">Hermes</h1>
+        <p class="intro">We are a drone-based booze delivery system. We're here to serve you. 
+            We dispose of over 10 mainstream beer brands, more than 50 artisanal brewers and beer-based alcoholic beverages.
+        </p>
+        <button class="first">Ask the Gods for Booze!</button>
+        <div class="bg1 cards">
+            <div>
+                <i class="icon"></i>
+                <h4>24 hours, 7 days a week</h4>
+                <p>Always there for you. Liquor delivery to every ocasion.</p>
+            </div>
+            <div>
+                <i class="icon"></i>
+                <h4>30 minutes or less</h4>
+                <p>We guarantee your delivery or you get your order for free.</p>
+            </div>
+            <div>
+                <i class="icon"></i>
+                <h4>Ice Cold, Natural or Warm</h4>
+                <p>Bottles in perfect temperature for immediate consumption. </p>
+            </div>
+            <div>
+                <i class="icon"></i>
+                <h4>Hermetically Sealed</h4>
+                <p>Caduceus will keep your order perfect until they arive.</p>
+            </div>
+        </div>
+        <h2 class="newsletter">Join the Olympus</h2>
+        <p class="olympus">Our loyalty program and our club. It's free, has discounts, last minute deals, and exclusive invites to tasting events and brewing courses and factories.</p>
+        <form action="/"><input type="email" name="newsletter" class="newsletter" placeholder="your@email.com">
+        <div><button type="submit"><a href="#"></a>Join Newsletter</button></div>
+        </form>
+        <div class="bg2">
+           <table class="delivery-information">
+               <thead>
+                   <th>Hours</th>
+                   <th>Fee</th>
+                   <th>Discount</th>
+                   <th>$/Hours</th>
+               </thead>
+               <tbody>
+                <tr>
+                    <td>12-14h</td>
+                    <td>$20</td>
+                    <td>90%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14-16h</td>
+                    <td>$20</td>
+                    <td>90%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16-18h</td>
+                    <td>$20</td>
+                    <td>70%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18-20h</td>
+                    <td>$20</td>
+                    <td>70%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20-22h</td>
+                    <td>$20</td>
+                    <td>60%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>22-00h</td>
+                    <td>$20</td>
+                    <td>50%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>00-02h</td>
+                    <td>$20</td>
+                    <td>40%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>02-04h</td>
+                    <td>$20</td>
+                    <td>30%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>04-06h</td>
+                    <td>$20</td>
+                    <td>30%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>06-08h</td>
+                    <td>$20</td>
+                    <td>40%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>08-10h</td>
+                    <td>$20</td>
+                    <td>80%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10-12h</td>
+                    <td>$20</td>
+                    <td>90%</td>
+                    <td></td>
+                </tr>
+            </tbody>
+            </table>
+            <button>Start Shopping</button>
+        </div>
+        <figure>
+            <img class="hermes-departure" src="illustrations/hermes02.svg" alt="A suburban street with trees and a streetlamp, we see a couple sitting in a yellow and purple box waving to a robot that's flying away">
+        </figure>
+        <h2>About Hermes</h2>
+        <p class="examples">If you want to prepare a friends house for a last minute surprise party, send the gps position to Hermes and he will be there for you.<br><br>
+                A good reason for someone special come over could be a couple of good drinks. and good music. Just call over Hermes, he got half of that covered.
+            </p>
+    </main>
+    <footer>
+        <nav class="footer">
+            <ul class="footer-links">
+                <li><a href="#">Where to find Hermes</a></li>
+                <li><a href="#">Technologies</a></li>
+                <li><a href="#">Labels</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="social">
+                <a href="#"><div class="fab fa-twitter"></div></a>
+                <a href="#"><div class="fab fa-facebook-f"></div></a>
+                <a href="#"><div class="fab fa-instagram"></div></a>
+            </div>
+        </nav>
+    </footer>
 </body>
 </html>

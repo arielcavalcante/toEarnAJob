@@ -1,3 +1,172 @@
 @import 'reset';
 @import 'variables';
+@import 'fonts';
+@import 'sscss/_sscss.scss';
+@import 'scss/fontawesome.scss';
+@import 'scss/brands.scss';
 
+    * {
+      font-family: SF Pro Display;
+    }
+    body {
+      background: $black;
+    }
+
+    h1, h2, p {
+      color: $pale;
+      font-weight: 600;
+      text-align: start;
+      margin: auto;
+      width: 375px;
+    
+    }
+
+    .intro, .olympus {
+      flex-wrap: wrap;
+      display: block;
+        margin: auto;
+        min-width: 288px;
+        max-width: 568px;
+    }
+
+    button {
+      display: block;
+      justify-items: center;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        color: $black;
+        width: 312px;
+        height: 48px;
+        margin: auto;
+        background-color: $egg-shell;
+    } 
+      button:hover {
+        background: $pale;
+      }
+
+    input {
+      display: block;
+      justify-items: center;
+        font-family: SF Pro Display;
+        font-size: 18px;
+        color: $black;
+        width: 312px;
+        height: 48px;
+        margin: auto;
+        border: solid 2px $egg-shell;
+        background-color: #ffefc388;
+    }
+
+
+.hamburger-menu {
+      display: flex;
+      justify-items: start;
+        padding: 10px;
+        margin: 0;
+        height: 56px;
+        width: 56px;
+        background-color: $egg-shell;
+  }
+
+.menu-content {
+  font-weight: 600;
+  padding: 0 0 0 50px;
+}
+
+.menu {
+  background-color: $black-two;
+  padding: 0 30px;
+  border-bottom: 3px solid $wheat;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+} 
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: $pale;
+}
+
+li {
+  margin: 20px 0;
+} 
+
+
+.hermes-arrives, .hermes-departure {
+    display: block;
+      width: 325px;
+      height: auto;
+      margin: auto;
+}
+  .icon {
+    display: inline;
+      margin: auto;
+      background-color: $black;
+  }
+
+  .bg1 {
+    display: block;
+    flex-wrap: wrap;
+      margin: auto;
+      padding: 23px;
+      width: 375px;
+      height: 506px;
+      background-color: $black-two;
+  }
+
+  .cards > div {
+      width: 328px;
+      height: 58px;
+      margin: 12px auto;
+      padding: 16px;
+      background-color: $egg-shell;
+  }
+
+ .cards > div > p, i, h4 {
+    display: block;
+      color: $black;
+      width: auto;
+      margin: auto;
+  }
+
+.bg2 {
+      width: 375px;
+      height: 1168px;
+      margin: auto;
+      background-color: $black-two;
+}
+
+
+p {
+  width: 288px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: auto;
+}
+
+.delivery-information {
+  border-collapse: collapse;
+  display: table;
+  color: $pale;
+  margin: 50px auto;
+  min-width: 320px;
+  text-align: left;
+}
+
+.delivery-information thead {
+  text-align: left;
+  color: $pale;
+  font-weight: 800;
+  font-style: bold;
+  line-height: 21px;
+  background-color: $black;
+}
+
+.delivery-information th,
+.delivery-information td {
+  padding: 12px 15px; 
+}
+
+footer {
+  display: block;
+}

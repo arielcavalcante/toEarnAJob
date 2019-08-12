@@ -1,0 +1,55 @@
+{
+  "_from": "sscss@^0.1.2",
+  "_id": "sscss@0.1.2",
+  "_inBundle": false,
+  "_integrity": "sha512-6T+jGqaF9uDcDsDMBQ7ND+W1YwdAVnLnui+voqyY334ZcNMWha8v3o5ym9l5TLCDvtTOxP6qA2LoOMNLajhZWQ==",
+  "_location": "/sscss",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "sscss@^0.1.2",
+    "name": "sscss",
+    "escapedName": "sscss",
+    "rawSpec": "^0.1.2",
+    "saveSpec": null,
+    "fetchSpec": "^0.1.2"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/sscss/-/sscss-0.1.2.tgz",
+  "_shasum": "113420393a3c3bccc255f7d76e63a94ad2e597a6",
+  "_spec": "sscss@^0.1.2",
+  "_where": "/Users/arielcavalcante",
+  "author": {
+    "name": "Sebastian Musiał"
+  },
+  "bugs": {
+    "url": "https://github.com/sebastianmusial/SSCSS/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Easy to manage tool for keeping global RWD settings in the projects.",
+  "homepage": "https://github.com/sebastianmusial/SSCSS#readme",
+  "keywords": [
+    "scss",
+    "css",
+    "sscss",
+    "styleguide",
+    "stylesheet",
+    "scss-template",
+    "scss-styles"
+  ],
+  "license": "MIT",
+  "name": "sscss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianmusial/SSCSS.git"
+  },
+  "scripts": {
+    "test": "sass --watch example/styles.scss:example/styles.css"
+  },
+  "version": "0.1.2"
+}
