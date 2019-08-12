@@ -4,7 +4,10 @@
 @import 'sscss/_sscss.scss';
 @import 'scss/fontawesome.scss';
 @import 'scss/brands.scss';
+@import 'scss/solid.scss';
 
+
+//general settings!//
     * {
       font-family: SF Pro Display;
     }
@@ -16,20 +19,19 @@
       color: $pale;
       font-weight: 600;
       text-align: start;
-      margin: auto;
-      width: 375px;
-    
+      width: 70%;
+      min-width: 320px;
+      max-width: 568px;
+      text-indent: 12px;
+      margin: 36px auto;
     }
 
-    .intro, .olympus {
-      flex-wrap: wrap;
-      display: block;
-        margin: auto;
-        min-width: 288px;
-        max-width: 568px;
+    p {
+      text-indent: 24px;
+      margin: 36px auto;
     }
 
-    button {
+    .btn {
       display: block;
       justify-items: center;
         font-size: 24px;
@@ -38,27 +40,48 @@
         color: $black;
         width: 312px;
         height: 48px;
-        margin: auto;
         background-color: $egg-shell;
+        margin: 24px auto;
     } 
-      button:hover {
+      .btn:hover {
         background: $pale;
       }
 
+      form {
+        display: flex;
+      }
     input {
       display: block;
       justify-items: center;
+        text-indent: 10px;
         font-family: SF Pro Display;
         font-size: 18px;
         color: $black;
-        width: 312px;
-        height: 48px;
+        min-width: 312px;
+        height: 44px;
         margin: auto;
         border: solid 2px $egg-shell;
         background-color: #ffefc388;
     }
+// end of general settings//
 
 
+
+    button .fa-search {
+        display: block;
+        justify-items: center;
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center;
+          color: $black;
+          width: 312px;
+          height: 48px;
+          background-color: $egg-shell;
+          margin: 24px auto;
+      } 
+        button .fa-search:hover {
+          background: $pale;
+    }
 .hamburger-menu {
       display: flex;
       justify-items: start;
@@ -85,63 +108,95 @@ ul {
   list-style-type: none;
   padding: 0;
   color: $pale;
+  margin: auto;
 }
 
-li {
+.menu-content li {
   margin: 20px 0;
 } 
 
-
 .hermes-arrives, .hermes-departure {
     display: block;
-      width: 325px;
+      width: 100%;
       height: auto;
       margin: auto;
 }
-  .icon {
-    display: inline;
-      margin: auto;
-      background-color: $black;
-  }
+button .fas .fa-search {
+  display: flex;
+  width: 56px;
+}
+
+.intro, .olympus {
+  flex-wrap: wrap;
+  display: block;
+    min-width: 288px;
+    max-width: 568px;
+}
+ 
 
   .bg1 {
-    display: block;
+    display: flex;
     flex-wrap: wrap;
-      margin: auto;
       padding: 23px;
-      width: 375px;
-      height: 506px;
+      width: auto;
+      height: auto;
+      margin: 48px auto;
+      padding: 36px 0;
       background-color: $black-two;
   }
 
-  .cards > div {
-      width: 328px;
+  .cards div {
+      min-width: 70%;
+      max-width: 50%;
       height: 58px;
       margin: 12px auto;
       padding: 16px;
       background-color: $egg-shell;
+  } 
+
+  .icon {
+    display: inline;
+      background-color: $black;
   }
 
- .cards > div > p, i, h4 {
+ .cards div p, i, h4 {
     display: block;
       color: $black;
       width: auto;
-      margin: auto;
+  }
+// lighter stripe, join the olympus call, 
+// h2, p, input and button. isn't in a container.
+
+  h2.join-olympus, button.join-olympus {
+    margin: 0 auto;
   }
 
+  input.newsletter {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    min-width: 308px; 
+    max-width: 448px;
+  }
+
+  form {
+    max-width: 760px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 36px auto;
+  }
+
+ 
+
 .bg2 {
-      width: 375px;
-      height: 1168px;
-      margin: auto;
+      display: block;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
       background-color: $black-two;
-}
-
-
-p {
-  width: 288px;
-  font-size: 18px;
-  font-weight: 500;
-  margin: auto;
+      margin: 36px auto;
+      padding: 36px 0;
 }
 
 .delivery-information {
@@ -149,15 +204,25 @@ p {
   display: table;
   color: $pale;
   margin: 50px auto;
+  width: auto;
   min-width: 320px;
   text-align: left;
+  margin: auto;
 }
+      .delivery-information tr:hover {
+        background-color: $black;
+      }
+
+        .delivery-information tr:nth-of-type(even){
+          background-color: $black-50;
+        }
 
 .delivery-information thead {
   text-align: left;
   color: $pale;
+  width: auto;
+  margin: auto;
   font-weight: 800;
-  font-style: bold;
   line-height: 21px;
   background-color: $black;
 }
@@ -167,6 +232,55 @@ p {
   padding: 12px 15px; 
 }
 
-footer {
+.shopping {
   display: block;
+  margin: 36px auto;
 }
+
+footer {
+  margin-top: 36px;
+  background-color: $egg-shell;
+}
+
+.footer {
+  display: flex;
+    color: $black;
+    width: 100%;
+    height: auto;
+    padding: 12px 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  min-width: 202px;
+  max-width: 600px;
+    font-weight: 700;
+    color: $black;
+    margin-left: 10%;    
+}
+  footer li {
+    padding: 8px;
+  }
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+      max-width: 256px;
+      min-width: 128px;
+      font-size: 36px;
+      text-align: center;
+      margin: auto 0;
+      margin-right: 10%;
+      padding: auto;
+}
+
+.social div {
+  padding: 8px;
+  justify-items: center;
+  margin: auto;
+  text-align: center;
+}
+

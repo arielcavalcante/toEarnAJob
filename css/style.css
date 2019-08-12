@@ -6059,6 +6059,25 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
 }
 
+/*!
+ * Font Awesome Free 5.10.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("webfonts/fa-solid-900.eot");
+  src: url("webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("webfonts/fa-solid-900.woff2") format("woff2"), url("webfonts/fa-solid-900.woff") format("woff"), url("webfonts/fa-solid-900.ttf") format("truetype"), url("webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
 * {
   font-family: SF Pro Display;
 }
@@ -6071,20 +6090,19 @@ h1, h2, p {
   color: #f2e8da;
   font-weight: 600;
   text-align: start;
-  margin: auto;
-  width: 375px;
-}
-
-.intro, .olympus {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: block;
-  margin: auto;
-  min-width: 288px;
+  width: 70%;
+  min-width: 320px;
   max-width: 568px;
+  text-indent: 12px;
+  margin: 36px auto;
 }
 
-button {
+p {
+  text-indent: 24px;
+  margin: 36px auto;
+}
+
+.btn {
   display: block;
   justify-items: center;
   font-size: 24px;
@@ -6093,25 +6111,49 @@ button {
   color: #333333;
   width: 312px;
   height: 48px;
-  margin: auto;
   background-color: #ffefc3;
+  margin: 24px auto;
 }
 
-button:hover {
+.btn:hover {
   background: #f2e8da;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 input {
   display: block;
   justify-items: center;
+  text-indent: 10px;
   font-family: SF Pro Display;
   font-size: 18px;
   color: #333333;
-  width: 312px;
-  height: 48px;
+  min-width: 312px;
+  height: 44px;
   margin: auto;
   border: solid 2px #ffefc3;
   background-color: #ffefc388;
+}
+
+button .fa-search {
+  display: block;
+  justify-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333333;
+  width: 312px;
+  height: 48px;
+  background-color: #ffefc3;
+  margin: 24px auto;
+}
+
+button .fa-search:hover {
+  background: #f2e8da;
 }
 
 .hamburger-menu {
@@ -6143,63 +6185,108 @@ ul {
   list-style-type: none;
   padding: 0;
   color: #f2e8da;
+  margin: auto;
 }
 
-li {
+.menu-content li {
   margin: 20px 0;
 }
 
 .hermes-arrives, .hermes-departure {
   display: block;
-  width: 325px;
+  width: 100%;
   height: auto;
   margin: auto;
 }
 
-.icon {
-  display: inline;
-  margin: auto;
-  background-color: #333333;
+button .fas .fa-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 56px;
+}
+
+.intro, .olympus {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: block;
+  min-width: 288px;
+  max-width: 568px;
 }
 
 .bg1 {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: auto;
   padding: 23px;
-  width: 375px;
-  height: 506px;
+  width: auto;
+  height: auto;
+  margin: 48px auto;
+  padding: 36px 0;
   background-color: #262626;
 }
 
-.cards > div {
-  width: 328px;
+.cards div {
+  min-width: 70%;
+  max-width: 50%;
   height: 58px;
   margin: 12px auto;
   padding: 16px;
   background-color: #ffefc3;
 }
 
-.cards > div > p, i, h4 {
+.icon {
+  display: inline;
+  background-color: #333333;
+}
+
+.cards div p, i, h4 {
   display: block;
   color: #333333;
   width: auto;
-  margin: auto;
+}
+
+h2.join-olympus, button.join-olympus {
+  margin: 0 auto;
+}
+
+input.newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  min-width: 308px;
+  max-width: 448px;
+}
+
+form {
+  max-width: 760px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 36px auto;
 }
 
 .bg2 {
-  width: 375px;
-  height: 1168px;
-  margin: auto;
+  display: block;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: auto;
   background-color: #262626;
-}
-
-p {
-  width: 288px;
-  font-size: 18px;
-  font-weight: 500;
-  margin: auto;
+  margin: 36px auto;
+  padding: 36px 0;
 }
 
 .delivery-information {
@@ -6207,15 +6294,26 @@ p {
   display: table;
   color: #f2e8da;
   margin: 50px auto;
+  width: auto;
   min-width: 320px;
   text-align: left;
+  margin: auto;
+}
+
+.delivery-information tr:hover {
+  background-color: #333333;
+}
+
+.delivery-information tr:nth-of-type(even) {
+  background-color: #33333350;
 }
 
 .delivery-information thead {
   text-align: left;
   color: #f2e8da;
+  width: auto;
+  margin: auto;
   font-weight: 800;
-  font-style: bold;
   line-height: 21px;
   background-color: #333333;
 }
@@ -6225,7 +6323,70 @@ p {
   padding: 12px 15px;
 }
 
-footer {
+.shopping {
   display: block;
+  margin: 36px auto;
+}
+
+footer {
+  margin-top: 36px;
+  background-color: #ffefc3;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333333;
+  width: 100%;
+  height: auto;
+  padding: 12px 0;
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-width: 202px;
+  max-width: 600px;
+  font-weight: 700;
+  color: #333333;
+  margin-left: 10%;
+}
+
+footer li {
+  padding: 8px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 256px;
+  min-width: 128px;
+  font-size: 36px;
+  text-align: center;
+  margin: auto 0;
+  margin-right: 10%;
+  padding: auto;
+}
+
+.social div {
+  padding: 8px;
+  justify-items: center;
+  margin: auto;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
