@@ -121,6 +121,7 @@
   font-size: 36px;
   color: $wheat;
 }
+          // ----------------------- menu media query
         @media only screen and (min-width: 500px){
           label {
             display: block;
@@ -143,7 +144,7 @@
           #toggle:checked + .nav {
             display: block;
           }
-          //---------------------------- menu
+          //---------------------------- menu over
         
         
         
@@ -276,6 +277,7 @@ button .fas .fa-search {
 footer {
   margin-top: 36px;
   background-color: $egg-shell;
+  margin: auto;
 }
 
 .footer {
@@ -284,6 +286,7 @@ footer {
     width: 100%;
     height: auto;
     padding: 12px 0;
+    margin: auto;
 }
 
 .footer-links {
@@ -298,25 +301,44 @@ footer {
 }
   footer li {
     padding: 8px;
+    list-style-type: none;
+    margin: auto;
   }
 
 .social {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-      max-width: 256px;
+      max-width: 512px;
       min-width: 128px;
       font-size: 36px;
       text-align: center;
-      margin: auto 0;
-      margin-right: 10%;
+      margin: auto;
       padding: auto;
 }
 
 .social div {
-  padding: 8px;
+  padding: 12px;
   justify-items: center;
   margin: auto;
   text-align: center;
 }
 
+.cards {
+  margin: auto;
+  display: block;
+}
+
+i.fas {
+  display: flex;
+  flex-direction: row;
+  background-color: $black;
+  color: $wheat;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  text-align: center;
+  padding: 16px;
+  margin: auto 0px;
+  
+}
