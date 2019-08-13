@@ -77,10 +77,6 @@
     color: $wheat;
 }
 
-.header-container {
-  margin: 0;
-}
-
 .nav::before {
   display: none;
 }
@@ -101,30 +97,64 @@
 }
 
 // hide the checkbox
-#toggle {
-  display: none;
-  margin: 10px;
-  transform: scale(2)
+.menubar {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  
 }
-
-.toggle-container {
+#toggle{
+  display: none;
+}
+#toggle:checked ~ .nav-item{
   display: block;
 }
-
-#toggle:checked {  
-    display: block;
-    color: $wheat;
+#toggle label {
+  padding: 12px;
 }
 
+.fas .fa-bars {
+  margin: 0;
+  display: flex;
+}
+
+button.fas.fa-search:before{
+  background-color: $black-two;
+  color: $wheat;
+  padding: 18px 12px;
+  margin: 0;
+}
+button.fas.fa-search {
+  border: 2px solid $egg-shell;
+  margin: 0;
+  padding: 0;
+}
+
+
+//.toggle-label
+
 .fa-bars {
-  display: none;
+  display: block;
   font-size: 36px;
   color: $wheat;
 }
+
+.nav {
+  display: none;
+}
           // ----------------------- menu media query
         @media only screen and (min-width: 500px){
-          label {
+           input[type=checkbox]+.toggle-label {
             display: block;
+            padding: 0;
+          }
+
+          input[type=checkbox]:checked+.toggle-label {
+            display: block;
+          }
+          input[type=checkbox]:checked+.toggle-label::after {
+            content: .nav-item;
+          
           }
           .nav {
             text-align: left;
@@ -158,10 +188,6 @@
       height: auto;
       margin: auto;
 }
-button .fas .fa-search {
-  display: flex;
-  width: 56px;
-}
 
 .intro, .olympus {
   flex-wrap: wrap;
@@ -169,8 +195,6 @@ button .fas .fa-search {
     min-width: 288px;
     max-width: 568px;
 }
- 
-
   .bg1 {
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +205,11 @@ button .fas .fa-search {
       padding: 36px 0;
       background-color: $black-two;
   }
-
+  .cards {
+    margin: auto;
+    display: block;
+    
+  }
   .cards div {
       min-width: 70%;
       max-width: 50%;
@@ -191,15 +219,35 @@ button .fas .fa-search {
       background-color: $egg-shell;
   } 
 
-  .icon {
-    display: inline;
-      background-color: $black;
+  .fa-cloud-sun,
+  .fa-clock,
+  .fa-snowflake,
+  .fa-lock {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    border: 0;
   }
 
- .cards div p, i, h4 {
+  .cards div i:before {
+    
+    margin: 0;
+  }
+
+ .cards div p, .cards div h4 {
     display: block;
-      color: $black;
+    color: $black;
+      text-align: left;
       width: auto;
+  }
+  i.fas::before {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    display: block;
+    margin: auto;
+      background-color: $black;
   }
 // lighter stripe, join the olympus call, 
 // h2, p, input and button. isn't in a container.
@@ -278,6 +326,7 @@ footer {
   margin-top: 36px;
   background-color: $egg-shell;
   margin: auto;
+  text-align: left;
 }
 
 .footer {
@@ -287,46 +336,44 @@ footer {
     height: auto;
     padding: 12px 0;
     margin: auto;
+    text-align: left;
 }
 
 .footer-links {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  min-width: 202px;
-  max-width: 600px;
+  width: 180px;
+    font-size: 18px;
     font-weight: 700;
-    color: $black;
-    margin-left: 10%;    
-}
-  footer li {
-    padding: 8px;
     list-style-type: none;
+    color: $black;   
+    text-align: left;
     margin: auto;
-  }
+    padding: 36px;
+}
+.footer-links > * {
+  padding: 8px 0;
+}
 
 .social {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
-      max-width: 512px;
-      min-width: 128px;
+      width: 256px;
+      min-width: 48px;
       font-size: 36px;
       text-align: center;
       margin: auto;
-      padding: auto;
+      padding: 40px;
 }
 
 .social div {
   padding: 12px;
+  max-width: 256px;
   justify-items: center;
   margin: auto;
   text-align: center;
-}
-
-.cards {
-  margin: auto;
-  display: block;
 }
 
 i.fas {
@@ -339,6 +386,6 @@ i.fas {
   font-size: 24px;
   text-align: center;
   padding: 16px;
-  margin: auto 0px;
+  margin: auto;
   
 }
