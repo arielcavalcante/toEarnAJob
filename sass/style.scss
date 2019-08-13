@@ -64,56 +64,92 @@
         background-color: #ffefc388;
     }
 // end of general settings//
+ 
 
-
-
-    button .fa-search {
-        display: block;
-        justify-items: center;
-          font-size: 24px;
-          font-weight: bold;
-          text-align: center;
-          color: $black;
-          width: 312px;
-          height: 48px;
-          background-color: $egg-shell;
-          margin: 24px auto;
-      } 
-        button .fa-search:hover {
-          background: $pale;
-    }
-.hamburger-menu {
-      display: flex;
-      justify-items: start;
-        padding: 10px;
-        margin: 0;
-        height: 56px;
-        width: 56px;
-        background-color: $egg-shell;
-  }
-
-.menu-content {
-  font-weight: 600;
-  padding: 0 0 0 50px;
+//---- header ----
+.container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+    margin: 0;
+    background-color: $black-two;
+    color: $wheat;
 }
 
-.menu {
+.header-container {
+  margin: 0;
+}
+
+.nav::before {
+  display: none;
+}
+.nav {
+  margin: 0;
+  color: $wheat;
+  display: block;
+  padding: 36px 0;
   background-color: $black-two;
-  padding: 0 30px;
-  border-bottom: 3px solid $wheat;
-  box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
-} 
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  color: $pale;
-  margin: auto;
 }
 
-.menu-content li {
-  margin: 20px 0;
-} 
+.nav ul li {
+  padding: 12px 0;
+}
+
+.nav ul li:hover {
+  background-color: $black-50;
+}
+
+// hide the checkbox
+#toggle {
+  display: none;
+  margin: 10px;
+  transform: scale(2)
+}
+
+.toggle-container {
+  display: block;
+}
+
+#toggle:checked {  
+    display: block;
+    color: $wheat;
+}
+
+.fa-bars {
+  display: none;
+  font-size: 36px;
+  color: $wheat;
+}
+        @media only screen and (min-width: 500px){
+          label {
+            display: block;
+          }
+          .nav {
+            text-align: left;
+            display: block;
+            padding-left: 36px;
+            list-style-type: none;
+
+          }
+          .nav-item {
+            display: block;
+            
+          }
+          .nav-item:hover {
+            padding-left: 12px;
+            background-color: $black-50;
+          }
+          #toggle:checked + .nav {
+            display: block;
+          }
+          //---------------------------- menu
+        
+        
+        
+        }
+
+// ------------------- container ------------------- //
 
 .hermes-arrives, .hermes-departure {
     display: block;
